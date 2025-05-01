@@ -70,17 +70,10 @@
           "type": "description",
           "settings": {}
         },
-        "text_XaAV4y": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Care Instructions</strong>",
-            "text_style": "body"
-          }
-        },
         "custom_liquid_xFahdc": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n<h3>Care Instructions</h3>\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
           }
         },
         "collapsible-row-0": {
@@ -131,7 +124,6 @@
         "popup_MdWaqr",
         "buy_buttons",
         "description",
-        "text_XaAV4y",
         "custom_liquid_xFahdc",
         "collapsible-row-0",
         "collapsible-row-1",
