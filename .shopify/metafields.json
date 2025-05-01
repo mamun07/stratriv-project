@@ -1,0 +1,75 @@
+{
+  "article": [],
+  "blog": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [],
+  "product": [
+    {
+      "key": "product-form",
+      "namespace": "shopify",
+      "name": "Product form",
+      "description": "Defines the format or presentation of a product, typically for health and beauty; e.g. lotion, serum",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-for-skin-type",
+      "namespace": "shopify",
+      "name": "Suitable for skin type",
+      "description": "Specifies products for specific skin conditions, such as dry, aging, or sensitive",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "constitutive-ingredients",
+      "namespace": "shopify",
+      "name": "Constitutive ingredients",
+      "description": "Specifies the main components used in a product's formulation, e.g. beeswax, rosehip oil",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "cosmetic-function",
+      "namespace": "shopify",
+      "name": "Cosmetic function",
+      "description": "Defines the intended benefit or effect of a cosmetic product, e.g. soothing, healing",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "care_instructions",
+      "namespace": "custom",
+      "name": "Care Instructions",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "size_chart",
+      "namespace": "custom",
+      "name": "Size Chart",
+      "description": "",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    }
+  ],
+  "variant": [],
+  "shop": []
+}
