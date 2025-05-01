@@ -169,7 +169,8 @@
         "image-with-text-1"
       ],
       "settings": {
-        "height": "small",
+        "image": "{{ product.featured_image }}",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
