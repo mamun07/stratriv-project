@@ -73,7 +73,7 @@
         "custom_liquid_xFahdc": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n<h3><b>Care Instructions</b></h3>\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n<h3><b>{{'Care Instructions' | upcase}}</b></h3>\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
           }
         },
         "collapsible-row-0": {
