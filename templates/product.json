@@ -130,6 +130,9 @@
         "collapsible-row-2",
         "collapsible-row-3"
       ],
+      "custom_css": [
+        ".product-popup-modal__opener {display: flex; justify-content: flex-end; margin: 0;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
