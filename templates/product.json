@@ -55,7 +55,7 @@
           "type": "popup",
           "settings": {
             "text": "Size Chart",
-            "content": "",
+            "content": "<p>ok</p>",
             "custom_liquid": "{% assign size_chart = product.metafields.custom.size_chart %}\n{{ size_chart  }}"
           }
         },
