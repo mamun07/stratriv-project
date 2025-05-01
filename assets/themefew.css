@@ -1,8 +1,8 @@
 .product-badge-limited span {
     max-width: 100%;
-    background: #fff6ee;
-    color: #e96f10;
     padding: 6px 10px;
     border-radius: 5px;
-    border: 1px solid #f5dac5;
+    border: 1px solid #bbe1d3;
+    background: #edfbf6;
+    color: #077c50;
 }
