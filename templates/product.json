@@ -26,7 +26,7 @@
         "custom_liquid_fU3jYf": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.tags contains 'limited-edition' %}\n  <div class=\"product-badge-limited\">🌟 Limited Edition!</div>\n{% endif %}"
+            "custom_liquid": "{% if product.tags contains 'limited-edition' %}\n  <div class=\"product-badge-limited\"><span>🌟 Limited Edition!</span></div>\n{% endif %}"
           }
         },
         "caption": {
