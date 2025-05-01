@@ -23,6 +23,12 @@
           "type": "title",
           "settings": {}
         },
+        "custom_liquid_fU3jYf": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.tags contains 'limited-edition' %}\n  <div class=\"product-badge-limited\">🌟 Limited Edition!</div>\n{% endif %}"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -102,6 +108,7 @@
       "block_order": [
         "vendor",
         "title",
+        "custom_liquid_fU3jYf",
         "caption",
         "price",
         "variant_picker",
