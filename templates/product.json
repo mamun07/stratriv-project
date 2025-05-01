@@ -51,6 +51,14 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "popup_MdWaqr": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "content": "",
+            "custom_liquid": "{% assign size_chart = product.metafields.custom.size_chart%}\n{{ size_chart  }}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -113,6 +121,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "popup_MdWaqr",
         "buy_buttons",
         "description",
         "custom_liquid_xFahdc",
