@@ -62,6 +62,12 @@
           "type": "description",
           "settings": {}
         },
+        "custom_liquid_xFahdc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -97,12 +103,6 @@
             "content": "",
             "page": ""
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -115,11 +115,11 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "custom_liquid_xFahdc",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "collapsible-row-3"
       ],
       "settings": {
         "enable_sticky_info": true,
