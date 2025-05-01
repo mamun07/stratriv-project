@@ -194,7 +194,7 @@
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    <h3 style="margin: 0;">{{'Description' | upcase }}</h3>
+                    <h3 style="margin: 0;"><b>{{'Description' | upcase }}</b></h3>
                     {{ product.description }}
                   </div>
                 {%- endif -%}
