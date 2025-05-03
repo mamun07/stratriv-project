@@ -197,10 +197,12 @@
                   {%- endif -%}
                 </p>
               {%- when 'care_instructions' -%}
-                {% if product.metafields.custom.care_instructions %}
-                  <h3><b>{{'Care Instructions' | upcase}}</b></h3>
-                  {{ product.metafields.custom.care_instructions | metafield_tag }}
-                {% endif %}
+                <div class="care_instructions">
+                  {% if product.metafields.custom.care_instructions %}
+                    <h3><b>{{'Care Instructions' | upcase}}</b></h3>
+                    {{ product.metafields.custom.care_instructions | metafield_tag }}
+                  {% endif %}
+                </div>
 
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
