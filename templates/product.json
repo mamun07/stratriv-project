@@ -61,7 +61,7 @@
           "settings": {
             "text": "Size Chart",
             "content": "",
-            "custom_liquid": "{% assign size_chart = product.metafields.custom.size_chart.value %}\n\n{% if size_chart %}\n  <table class=\"size-chart-table\" style=\"border-collapse: collapse; width: 100%; text-align: center;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid #000; padding: 8px;\">Size</th>\n        <th style=\"border: 1px solid #000; padding: 8px;\">Bust</th>\n        <th style=\"border: 1px solid #000; padding: 8px;\">Waist</th>\n        <th style=\"border: 1px solid #000; padding: 8px;\">Hip</th>\n      </tr>\n    </thead>\n    <tbody>\n      {% for row in size_chart %}\n        <tr>\n          <td style=\"border: 1px solid #000; padding: 8px;\">{{ row.size }}</td>\n          <td style=\"border: 1px solid #000; padding: 8px;\">{{ row.bust }}</td>\n          <td style=\"border: 1px solid #000; padding: 8px;\">{{ row.waist }}</td>\n          <td style=\"border: 1px solid #000; padding: 8px;\">{{ row.hip }}</td>\n        </tr>\n      {% endfor %}\n    </tbody>\n  </table>\n{% endif %}"
+            "custom_liquid": ""
           }
         },
         "buy_buttons": {
