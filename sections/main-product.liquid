@@ -698,7 +698,34 @@
           </button>
           <div class="product-popup-modal__content-info">
             <h2>{{ block.settings.text | escape }}</h2>
-            {{ block.settings.custom_liquid | default: block.settings.content }}
+            {%  assign content_is = block.settings.custom_liquid | default: block.settings.content %}
+            {% if product.metafields.custom.size_chart != blank %}
+              {% assign size_chart = product.metafields.custom.size_chart.value %}
+              {% if size_chart %}
+                <table class="size-chart-table" style="border-collapse: collapse; width: 100%; text-align: center;">
+                  <thead>
+                    <tr>
+                      <th style="border: 1px solid #000; padding: 8px;">Size</th>
+                      <th style="border: 1px solid #000; padding: 8px;">Bust</th>
+                      <th style="border: 1px solid #000; padding: 8px;">Waist</th>
+                      <th style="border: 1px solid #000; padding: 8px;">Hip</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for row in size_chart %}
+                      <tr>
+                        <td style="border: 1px solid #000; padding: 8px;">{{ row.size }}</td>
+                        <td style="border: 1px solid #000; padding: 8px;">{{ row.bust }}</td>
+                        <td style="border: 1px solid #000; padding: 8px;">{{ row.waist }}</td>
+                        <td style="border: 1px solid #000; padding: 8px;">{{ row.hip }}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              {% endif %}
+            {% else %}
+              {{ content_is }}    
+            {%endif%}
           </div>
         </div>
       </modal-dialog>
