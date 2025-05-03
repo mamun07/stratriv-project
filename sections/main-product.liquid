@@ -96,6 +96,11 @@
                 >
                   {{- block.settings.text -}}
                 </p>
+              {%- when 'tag' -%}
+                {% if product.tags contains 'limited-edition' %}
+                  <div class="product-badge-limited"><span>🌟 Limited Edition!</span></div>
+                {% endif %}
+
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
@@ -765,6 +770,11 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         }
       ]
+    },
+    {
+      "type": "tag",
+      "name": "Tag",
+      "limit": 1
     },
     {
       "type": "title",
