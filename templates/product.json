@@ -75,8 +75,13 @@
           "type": "description",
           "settings": {}
         },
+        "care_instructions_mQcpXp": {
+          "type": "care_instructions",
+          "settings": {}
+        },
         "custom_liquid_xFahdc": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.metafields.custom.care_instructions %}\n<h3><b>{{'Care Instructions' | upcase}}</b></h3>\n  {{ product.metafields.custom.care_instructions | metafield_tag }}\n{% endif %}"
           }
@@ -130,6 +135,7 @@
         "popup_MdWaqr",
         "buy_buttons",
         "description",
+        "care_instructions_mQcpXp",
         "custom_liquid_xFahdc",
         "collapsible-row-0",
         "collapsible-row-1",
