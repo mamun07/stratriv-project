@@ -196,6 +196,12 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+              {%- when 'care_instructions' -%}
+                {% if product.metafields.custom.care_instructions %}
+                  <h3><b>{{'Care Instructions' | upcase}}</b></h3>
+                  {{ product.metafields.custom.care_instructions | metafield_tag }}
+                {% endif %}
+
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -951,6 +957,11 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
         }
       ]
+    },
+    {
+      "type": "care_instructions",
+      "name": "Care Instructions",
+      "limit": 1
     },
     {
       "type": "description",
